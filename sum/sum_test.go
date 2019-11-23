@@ -1,4 +1,4 @@
-package main
+package sum
 
 import (
 	"fmt"
@@ -21,12 +21,6 @@ func TestSum(t *testing.T) {
 
 	})
 
-}
-
-func ExampleSum() {
-	n := Sum([]int{2, 3, 1})
-	fmt.Println(n)
-	// Output: 6
 }
 
 func TestSumAll(t *testing.T) {
@@ -60,4 +54,10 @@ func TestSumAllTails(t *testing.T) {
 		checkSums(t, got, want)
 	})
 
+}
+
+func ExampleSum() {
+	n := Sum([]int{2, 3, 1})
+	fmt.Println(n)
+	// Output: 6
 }
